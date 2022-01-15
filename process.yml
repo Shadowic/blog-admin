@@ -1,0 +1,6 @@
+apps:
+  - name: blog_admin
+    script: 'node_modules/.bin/strapi'
+    exec_mode: cluster
+    env:
+      NODE_ENV: production

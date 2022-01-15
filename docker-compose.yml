@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  backend:
+    container_name: blog-admin
+    hostname: shadow-blog-admin
+    image: blog-admin
+    ports:
+      - "9501:1337"
+    env_file: shadow_blog_admin.env
+networks:
+  default:
+    external:
+      name: database
