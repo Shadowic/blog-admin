@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_nav_nav_items",
+  "info": {
+    "displayName": "NavItem",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "is_shown": {
+      "type": "boolean"
+    }
+  }
+}
