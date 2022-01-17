@@ -2,11 +2,19 @@ version: '3.7'
 services:
   backend:
     container_name: blog-admin
-    hostname: shadow-blog-admin
-    image: blog-admin
+    hostname: blog-backend
+    image: klimenkov/shadowic-blog-admin
     ports:
       - "9501:1337"
     env_file: shadow_blog_admin.env
+#  frontend:
+#    container_name: blog-front
+#    hostname: blog-frontend
+#    image: klimenkov/shadowic-blog-frontend
+#    ports:
+#      - "9502:3000"
+#    env_file: shadow_blog_front.env
+
 networks:
   default:
     external:
