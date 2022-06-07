@@ -6,7 +6,7 @@ module.exports = ({ env }) => [
       contentSecurityPolicy: {
         directives: {
           'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
-          'img-src': ["'self'", 'data:', 'blob:', 'cdn.jsdelivr.net', 'strapi.io', `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`],
+          'img-src': ["'self'", 'data:', 'blob:', 'cdn.jsdelivr.net', 'strapi.io', '33308.selcdn.ru', 's3.storage.selcloud.ru', `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.${env('AWS_HOST')}`],
         },
       }
     },
