@@ -18,6 +18,11 @@ services:
     ports:
       - "3306:3306"
     env_file: shadow_blog_admin.env
+    volumes:
+      - ./pg-data:/var/lib/mysql/data
+
+volumes:
+  pg_data:
 
 #  frontend:
 #    container_name: blog-front
