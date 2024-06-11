@@ -4,7 +4,7 @@ services:
   backend:
     container_name: blog-admin
     hostname: blog-backend
-    build: .
+    image: klimenkov/shadowic-blog-admin
     restart: always
     ports:
       - "9501:1337"
