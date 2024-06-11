@@ -4,7 +4,8 @@ services:
   backend:
     container_name: blog-admin
     hostname: blog-backend
-    image: klimenkov/shadowic-blog-admin
+    build: .
+    restart: always
     ports:
       - "9501:1337"
     depends_on:
@@ -13,6 +14,7 @@ services:
 
   db:
     image: mysql:8.0.30
+    restart: always
     ports:
       - "3306:3306"
     env_file: shadow_blog_admin.env
